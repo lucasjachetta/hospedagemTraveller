@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Localização</title>
+    <script src="./js/script.js"></script>
+
+
+</head>
+
+<body onload="openMap()">
+
+    <div class="container">
+        <div class="main-container">
+            <div class="textos">
+                <h1>Onde se Hospedar?</h1>
+                <h2>Olá viajante, neste momento você se encontra neste local:</h2>
+            </div>
+
+            <div id="map" onclick=navigateToLocation()>
+            </div>
+
+            <div class="text">
+                <h2>Que tal se hospedar em um hotel parceiro, bem próximo de você?</h2>
+                <p>Escolha o hotel de sua preferência: </p>
+            </div>
+
+
+            <div class="hotel">
+                <div class="fotoHotel"> <img src="./images/IbisStyles.jpg" alt="Foto Faixada IBIS Styles São Paulo Anhembi"></div>
+
+                <div class="descricaoHotel">
+                    <h2>IBIS Styles São Paulo Anhembi</h2>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <button id="buttonIBIS" onclick=navigateToIBIS()>Reservar</button>
+                </div>
+            
+            </div>     
+
+            <div class="hotel">
+                <div class="fotoHotel"> <img src="./images/comfortIbira.jpg" alt="Foto Faixada Comfort Ibirapuera"></div>
+
+                <div class="descricaoHotel">
+                    <h2>Comfort Ibirapuera</h2>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <button onclick=navigateToIberapuera()>Reservar</button>
+                </div>
+            
+            </div>   
+
+            <div class="hotel">
+                <div class="fotoHotel"> <img src="./images/blueTree.jpg" alt="Foto Faixada Comfort Ibirapuera"></div>
+
+                <div class="descricaoHotel">
+                    <h2>Blue Tree Premium Morumbi</h2>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <button onclick=navigateToBlueTree()>Reservar</button>
+                </div>
+            
+            </div>   
+
+            <div class="buttons">
+                <button id="buttonRestaurants"  onclick=navigateToNearbyRestaurants()> Restaurantes
+                    Próximos </button>
+                <button id="buttonSpots"  onclick=navigateToNearbySpots()> Pontos Turísticos Próximos
+                </button>
+
+        </div>
+        <footer class="principal_footer my-5">
+            <p class="">2022 Todos os direitos reservados – Projeto Traveller</p>
+        </footer>
+    </div>
+    
+
+</body>
+
+</html>
