@@ -1,4 +1,6 @@
-localizacaoTraveller
+HOSPEDAGEM TRAVELLER
+
+
 - Nesta feature do projeto "Traveller" utilizamos a API "MapQuest" para realizar uma consulta da geolocalização do usuário e com isso mostrá-la em um mapa estático.
 
 - A localização neste mapa muda de acordo com as coordenadas de latitude e longitude de onde o usuário está, este processo ocorre dinamicamente, mas para isso o usuário deve permitir ao browser que este recolha informações de sua localização.
