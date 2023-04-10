@@ -20,8 +20,8 @@ body {
     background-color: var(--mainColorBG);
     font-family: var(--fontPadrao);
     color: var(--fontColorida);
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 99vh;
 }
 
 
@@ -45,8 +45,31 @@ a {
 }
 
 .hotel {
-    display: flex;
-    flex-direction: row;
+    width: 350px;
+    margin: 30px;
+    height:100%;
+    display: inline-block;
+    text-align:center;
+    border:#0d3445 1px dashed
+}
+
+.fotoHotel {
+    margin:20px;
+    height: 200px;
+}
+
+.descricaoHotel h2 {
+    width:100%;
+    font-size:22px;
+}
+
+.hoteisWrapper {
+    background-color:#f0f7fa!important;
+    border:1px #9ed0e6 dashed
+ }
+
+.hoteisWrapper h3 {
+    margin:20px
 }
 
 .main-container {
@@ -60,6 +83,12 @@ a {
     padding: 30px;
     box-sizing: border-box;
     padding-bottom: 5%
+}
+
+.generalTitle {
+    padding:30px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .textos {
@@ -116,19 +145,3 @@ button:hover {
     cursor: pointer;
     margin: 20px 20px 20px 20px;
 }
-
-/* Hotel */
-
-.hotel{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    border: solid #0D3444;
-
-}
-.checked {
-    color: orange;
-  }
-
-
-/* Fim Hotel */

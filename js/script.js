@@ -22,7 +22,7 @@ function getPosition(position){
 }
 
 function callMapQuest(latitude, longitude) {
-    const url = `https://www.mapquestapi.com/staticmap/v5/map?key=${key}&locations=${latitude},${longitude}&size=@2x&defaultMarker=marker-sm-22407F-3B5998&size=600,400@2x`;
+    const url = `https://www.mapquestapi.com/staticmap/v5/map?key=${key}&locations=${latitude},${longitude}&size=700,250@2x&defaultMarker=marker-sm-22407F-3B5998&size=600,400@2x`;
     const img = document.createElement("img");
     img.src = url;
     document.getElementById("map").appendChild(img);
